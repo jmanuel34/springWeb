@@ -1,0 +1,41 @@
+package controller;
+
+import org.springframework.http.MediaType;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import dtos.ClienteDto;
+import service.ClientesService;
+import service.LibrosService;
+
+@Controller
+public class LibreriaController {
+	ClientesService clientesService;
+	LibrosService librosService;
+	
+	public LibreriaController(ClientesService clientesService, LibrosService librosService) {
+		super();
+		this.clientesService = clientesService;
+		this.librosService = librosService;
+	}
+	@PostMapping(value="login")
+	public String autenticar(@RequestParam("usuario") String usuario,
+					@RequestParam("password") String password) {
+		if(clientesService.autenticar(usuario, password)) {
+			return "inicio";
+		}
+		return "registro";
+	}
+	
+	@PostMapping(value="altaCliente",produces=MediaType.TEXT_PLAIN_VALUE)
+	public String  altaCliente (@ModelAttribute ClienteDto cliente) {
+		if(clientesService.registrar(cliente)) {
+			return "login";
+		}
+		return "login";	
+	}
+	
+
+}

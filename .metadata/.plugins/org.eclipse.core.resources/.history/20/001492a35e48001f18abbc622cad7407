@@ -1,0 +1,14 @@
+package dao;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import entities.Alumno;
+import entities.Curso;
+
+public interface CursosDao {
+	
+	List<Curso> cursosPorNombre(String nombre);
+	List<Curso> cursosSinMatriculaNombre(String nombre);
+
+}

@@ -1,0 +1,16 @@
+package dao;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import org.springframework.data.jpa.repository.Query;
+
+import entities.Alumno;
+import entities.Curso;
+
+public interface CursosDao {
+	@Query("select c from Curso c where idCurso=?1")
+	List<Curso> cursosPorNombre(int idCurso);
+	List<Curso> cursosSinMatriculaNombre(String nombre);
+
+}

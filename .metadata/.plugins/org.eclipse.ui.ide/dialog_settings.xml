@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/Volumes/SSD 1TB/CursoJavaEE2024/Copiseg proyectos/SpringWeb/12_libreria_spring"/>
+			<item value="/Volumes/SSD 1TB/CursoJavaEE2024/Copiseg proyectos/SpringWeb/12_libreria_spint"/>
+			<item value="/Volumes/SSD 1TB/CursoJavaEE2024/Copiseg proyectos/SpringWeb/11_buscador_spring_data_jpa_ajax"/>
+			<item value="/Volumes/SSD 1TB/CursoJavaEE2024/Copiseg proyectos/SpringWeb/11_buscador_spring_data_jpa_ajax_jm"/>
+			<item value="/Volumes/SSD 1TB/CursoJavaEE2024/Copiseg proyectos/SpringWeb/10_cursos_web_spring_data_jpa_jm"/>
+			<item value="/Volumes/SSD 1TB/CursoJavaEE2024/Copiseg proyectos/SpringWeb/09_buscador_dao_jpa_jm"/>
+			<item value="/Volumes/SSD 1TB/CursoJavaEE2024/Copiseg proyectos/SpringWeb/08_buscador_springdata_jpa_jm"/>
+			<item value="/Volumes/SSD 1TB/CursoJavaEE2024/Copiseg proyectos/SpringWeb/08_cursos_web_dao_jpa_jm"/>
+			<item value="/Volumes/SSD 1TB/CursoJavaEE2024/Copiseg proyectos/SpringWeb/07_buscador_completo_dao_jpa_jm"/>
+			<item value="/Volumes/SSD 1TB/CursoJavaEE2024/Copiseg proyectos/SpringWeb/07_buscador_completo_dao_jpa_am_jm"/>
+			<item value="/Volumes/SSD 1TB/CursoJavaEE2024/Copiseg proyectos/SpringWeb/07_buscador_completo_dao_jpa"/>
+			<item value="/Volumes/SSD 1TB/CursoJavaEE2024/Copiseg proyectos/SpringWeb/06_cursos_web_dao"/>
+			<item value="/Volumes/SSD 1TB/CursoJavaEE2024/Copiseg proyectos/SpringWeb/06_cursos_jdbc_jm"/>
+			<item value="/Volumes/SSD 1TB/CursoJavaEE2024/Copiseg proyectos/SpringWeb/05_buscador_completo_thymeleaf_dao_jm"/>
+			<item value="/Users/josemanuelmendez/Documents/Cursos/CursoJavaEE2024/amartinsierra/springweb2024/02_buscador_completo"/>
+			<item value="/Volumes/SSD 1TB/CursoJavaEE2024/Copiseg proyectos/SpringWeb/04_cursos_web_jm"/>
+			<item value="/Volumes/SSD 1TB/CursoJavaEE2024/Copiseg proyectos/SpringWeb/04_cursos_web"/>
+			<item value="/Volumes/SSD 1TB/CursoJavaEE2024/Copiseg proyectos/SpringWeb/03_buscador_completo_thymeleaf"/>
+			<item value="/Volumes/SSD 1TB/CursoJavaEE2024/Copiseg proyectos/SpringWeb/02_buscador_completo_thymeLive_jm"/>
+			<item value="/Volumes/SSD 1TB/CursoJavaEE2024/Copiseg proyectos/SpringWeb/02_buscador_completo_jm"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+		<section name="ExternalProjectImportWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="583"/>
+			<item key="DIALOG_Y_ORIGIN" value="173"/>
+			<item key="DIALOG_WIDTH" value="586"/>
+			<item key="DIALOG_HEIGHT" value="703"/>
+			<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+		</section>
+	</section>
+	<section name="CleanDialogSettings">
+		<item key="TOGGLE_SELECTED" value="true"/>
+		<item key="DIALOG_WIDTH" value="540"/>
+		<item key="DIALOG_HEIGHT" value="367"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+</section>

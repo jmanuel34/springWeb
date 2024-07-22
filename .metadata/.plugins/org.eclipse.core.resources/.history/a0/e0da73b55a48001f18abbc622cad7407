@@ -1,0 +1,21 @@
+package entities;
+
+import java.util.List;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
+
+@Entity
+public class Alumno {
+	@Id
+	private String usuario;
+	private String password;
+	private String nombre;
+	private String email;
+	private int edad;
+
+	@ManyToMany(mappedBy="cursos")
+	private List<Curso> cursos;
+
+}

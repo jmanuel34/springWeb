@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table border ="1" th:if="${resultados}">
+		<tr>
+			<th>Nombre</th>
+			<th>Duracion</th>
+			<th>Precio</th>
+		</tr>
+		<td th:each="${c.nombre"}"></td>
+		<td th:each="${c.duracion"}"></td>
+		<td th:each="${c.precio"}"></td>
+		</tr>
+	<br>
+	<a href="toInicio">Volver</a>
+</body>
+</html>

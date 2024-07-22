@@ -1,0 +1,10 @@
+package entities;
+
+import java.time.LocalDate;
+import java.util.List;
+
+public interface AlumnosDao {
+	List<Alumno> alumnosPorCurso(String nombreCurso);
+	List<Alumno> alumnosPorFechaCurso(LocalDate fecha);
+
+}

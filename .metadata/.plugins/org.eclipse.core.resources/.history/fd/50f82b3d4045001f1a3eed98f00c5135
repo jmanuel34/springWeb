@@ -1,0 +1,72 @@
+package controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.http.MediaType;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import dtos.LibroDto;
+import dtos.TemaDto;
+import jakarta.servlet.http.HttpSession;
+import service.ClientesService;
+import service.LibrosService;
+
+
+@Controller
+public class LibrosController {
+	
+	ClientesService clientesService;
+	LibrosService librosService;
+	
+	public LibrosController(ClientesService clientesService, LibrosService librosService) {
+		super();
+		this.clientesService = clientesService;
+		this.librosService = librosService;
+	}
+//*	
+	@GetMapping(value="autenticar")
+	public @ResponseBody String autenticar(@RequestParam("usuario") String usuario,
+												 @RequestParam("password") String password) {
+		return clientesService.autenticar(usuario, password)?"forward:/inicio":"registro";
+	}
+//*
+	public String registo (@ModelAttribute clienteDto cliente) {
+		return String.valueOf(clientesService.autenticar(cliente));
+	}
+	
+	public String alta(@ModelAttribute ClienteDto clienteDto)
+	@GetMapping(value="buscarTemas",produces=MediaType.APPLICATION_JSON_VALUE)
+	public @ResponseBody List<TemaDto> buscarTemas() {
+		
+		return librosService.buscarTemas();
+	}
+	
+	@GetMapping(value = "agregarCarrito", produces=MediaType.APPLICATION_JSON_VALUE)
+	public @ResponseBody List<LibroDto> agregarCarrito(int isbn, HttpSession sesion) {
+		LibroDto libro=librosService.getLibro(isbn);
+		List<LibroDto> carrito=new ArrayList<>();
+		if(sesion.getAttribute("carrito")!=null) {
+				carrito=(List<LibroDto>)sesion.getAttribute("carrito");
+		}
+		carrito.add(libro);
+		sesion.setAttribute("carrito", carrito);
+	return carrito
+	}
+	
+	@PostMapping(value="altaLibro", produces= MediaType.TEXT_PLAIN_VALUE)
+	public String altaLibro(@ModelAttibute libroDto libroDto, @RequestParam("idTema"), int idTema) {
+		libro.setTemaDto(librosService.getTema(idTema));
+		return String.valueOf(librosService.guardarLibro(libroDto));
+	}
+	
+	public @ResponseBody List<LibroDto> librosTema(@Requestparam ("idTema") int idTema) {
+		
+	}
+	
+}

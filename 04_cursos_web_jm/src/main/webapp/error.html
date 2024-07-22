@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Alta de cursos</title>
+</head>
+<body>
+	<h1>No es posible repetir curso</h1>
+	<h2 >El curso <b th:text="${param.curso.nombre}"></b> ya   existe</h2>
+	<a href="toInicio">Volver</a>
+</body>
+</html>
